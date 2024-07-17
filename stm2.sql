@@ -1,0 +1,14 @@
+create database stm;
+use stm;
+create table sut(stid varchar(10),stname varchar(50),coursename varchar(40),address varchar(50),ph int,batch int,batm varchar(30),coursedur varchar(30));
+select * from sut;
+create table tcr(trid varchar(10),trname varchar(50),sub varchar(40),address varchar(50),ph int,batch int,batm varchar(30),sal int,coursedur varchar(30));
+select * from tcr;
+create table bh_st(stid varchar(30),batch int,batm varchar(30));
+select*from bh_st;
+create table bh_tr(trid varchar(30),batch int,batm varchar(30));
+select*from bh_tr;
+create table c_st(stid varchar(30),coursename varchar(30), coursedur varchar(30));
+select*from c_st;
+create table c_tr(trid varchar(30),sub varchar(30),coursedur varchar(30));
+select * from c_tr;
